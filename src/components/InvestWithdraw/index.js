@@ -157,7 +157,7 @@ const InvestWithdraw = ({ROI,withdraw_Amount,setInvestment,set_ROI,find_Exp_earn
               <div className="flex items-center gap-4">
                 <label className="lbl">Ref Link</label>
                 <div className="icon-copy flex items-center justify-center cursor-pointer">
-                  <CopyToClipboard text={`https://galaxyx.finance/?ref=${address}`} >
+                  <CopyToClipboard text={`https://galaxyx.vercel.app/?ref=${address}`} >
                   <button className="copy-icon flex items-center justify-center">
                           <CopyIcon />
                         </button>
@@ -165,7 +165,7 @@ const InvestWithdraw = ({ROI,withdraw_Amount,setInvestment,set_ROI,find_Exp_earn
                 </div>
               </div>
               <h1 className="referral-val">
-                https://galaxyx.finance/?ref=
+                https://galaxyx.vercel.app/?ref=
                 {address == null
                         ? "..."
                         : address.toString().slice(0, 4) + "..."}
