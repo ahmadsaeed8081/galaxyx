@@ -1,0 +1,79 @@
+// Header
+.header-camp {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 90px;
+  padding: 12px 0px;
+  position: absolute;
+  background: transparent;
+  // border-bottom: 1px solid #fff;
+  .wrap {
+    gap: 20px;
+    .left {
+      .logo-img {
+        .logo {
+          height: 75px;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      .menu-list {
+        gap: 50px;
+        .menu-item {
+          color: #fff;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          cursor: pointer;
+          @include media("<=tablet") {
+            display: none;
+          }
+          @include anim;
+          &:hover {
+            color: $themeColor;
+          }
+        }
+      }
+      .connect-wallet-action {
+        margin-left: 100px;
+        @include media("<=tablet") {
+          margin-left: 0;
+        }
+        .btn-connect {
+          display: flex;
+          gap: 8px;
+          border-radius: 10px;
+          background: #eff3a1;
+          box-shadow: 0px 4.76596px 4.76596px 0px rgba(0, 0, 0, 0.25);
+          @include media("<=tablet") {
+            margin-right: 10px;
+          }
+          .btn-icon {
+            svg {
+              height: 16px;
+              width: 16px;
+            }
+          }
+          .btn-lbl {
+            color: #101b3a;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+      .menu-icon {
+        display: none;
+        @include media("<=tablet") {
+          display: flex;
+        }
+      }
+    }
+  }
+}

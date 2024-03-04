@@ -1,0 +1,104 @@
+.buy-token-model-section {
+  min-height: 440px;
+  width: 540px;
+  border-radius: 10px;
+  background: #fff;
+  @include media("<=phoneH") {
+    width: 100%;
+    min-height: 340px;
+    min-width: 300px;
+  }
+  .buy-token-model-hdr {
+    width: 100%;
+    .btn-tab {
+      flex: 1;
+      color: #fff;
+      font-family: "Syne", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 42.064px;
+      background: #050023e2;
+      border: none;
+      @include anim;
+      &.active {
+        color: #000;
+        background: $themeColor;
+      }
+      @include media("<=phoneH") {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  }
+  .model-block {
+    padding: 25px 35px;
+    @include media("<=phoneH") {
+      padding: 15px 24px;
+    }
+    .block-title {
+      color: #161616;
+      font-family: "Syne", sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 42.064px;
+      @include media("<=phoneH") {
+        font-size: 18px;
+      }
+    }
+    .input-field {
+      margin: 28px 0;
+      .input-lbl {
+        color: #1d1d1d;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 146.023%;
+      }
+      .txt {
+        color: #fff;
+        padding: 12px 10px;
+        border-radius: 10px;
+        background: #050023;
+        border: 1px solid transparent;
+        @include media("<=phoneH") {
+          padding: 8px;
+        }
+        &:focus {
+          border-color: $themeColor;
+        }
+      }
+    }
+    .info-block {
+      .info-item {
+        margin-bottom: 12px;
+        .lbl {
+          color: #161616;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+        }
+        .val {
+          color: #161616;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+    }
+    .btn-amount {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      border-radius: 8px;
+      background: #050023;
+      border-color: #050023;
+      @include media("<=phoneH") {
+        font-size: 14px;
+      }
+    }
+  }
+}

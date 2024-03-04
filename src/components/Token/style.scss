@@ -1,0 +1,113 @@
+.token-section {
+  @include media("<=tablet") {
+    justify-content: center;
+    text-align: center;
+  }
+  .token-wrap {
+    background-color: #140f3b;
+    border-radius: 20px;
+    .token-details {
+      margin: 60px 50px;
+      margin-left: 70px;
+      @include media("<=tablet") {
+        margin: 30px 0;
+        margin-left: 0;
+      }
+      .token-desc {
+        color: #e0e0e0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        @include media("<=tablet") {
+          font-size: 12px;
+          line-height: 18px;
+          display: flex;
+          direction: rtl;
+          justify-content: center;
+        }
+      }
+      .token-heading {
+        margin: 20px 0;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        @include media("<=tablet") {
+          margin: 10px 0;
+          font-size: 32px;
+        }
+      }
+      .token-checked {
+        margin: 20px 0;
+        @include media("<=tablet") {
+          margin: 10px 0;
+          justify-content: center;
+          text-align: center;
+        }
+        .check-wrap {
+          gap: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          @include media("<=tablet") {
+            gap: 6px;
+          }
+
+          .check {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            background-color: $themeColor;
+            @include anim;
+            cursor: pointer;
+            @include media("<=tablet") {
+              height: 24px;
+              width: 24px;
+            }
+            svg {
+              justify-content: center;
+              text-align: center;
+              height: 24px;
+              width: 24px;
+              @include media("<=tablet") {
+                height: 16px;
+                width: 16px;
+              }
+            }
+          }
+        }
+        .check-desc {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          @include media("<=tablet") {
+            font-size: 12px;
+          }
+        }
+      }
+      .token-button {
+        margin-top: 20px;
+        background-color: $themeColor;
+        color: #0c1024;
+        font-size: 14px;
+        font-style: normal;
+        padding: 12px 20px;
+        border-radius: 40px;
+        text-align: center;
+        font-weight: 600;
+        @include media("<=tablet") {
+          font-size: 12px;
+        }
+        .select {
+          text-decoration: none;
+          background-color: transparent;
+          fill: black;
+        }
+      }
+    }
+  }
+}

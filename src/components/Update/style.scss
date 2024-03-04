@@ -1,0 +1,77 @@
+.update-section {
+  text-align: center;
+  margin: 100px 0;
+  @include media("<=tablet") {
+    margin: 40px 0;
+  }
+  .update-details {
+    .update-heading {
+      color: #fff;
+      text-align: center;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 600;
+      padding-bottom: 30px;
+      @include media("<=tablet") {
+        font-size: 24px;
+        padding-bottom: 20px;
+        line-height: 36px;
+      }
+    }
+    .update-desc {
+      color: #e0e0e0;
+      text-align: center;
+      font-size: 14px;
+      padding: 0 300px;
+      font-style: normal;
+      font-weight: 400;
+      padding-bottom: 30px;
+      @include media("<=tablet") {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 20px;
+        padding-bottom: 20px;
+      }
+    }
+    .update-icons {
+      gap: 14px;
+      display: flex;
+      justify-content: center;
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 6px;
+        background-color: #292a47;
+        @include media("<=tablet") {
+          height: 30px;
+          width: 30px;
+          border-radius: 4px;
+        }
+        @include anim;
+        cursor: pointer;
+        svg {
+          justify-content: center;
+          text-align: center;
+          height: 24px;
+          width: 24px;
+          @include media("<=tablet") {
+            height: 18px;
+            width: 18px;
+          }
+        }
+        &:hover {
+          svg {
+            background-color: #292a47;
+            path {
+              @include anim;
+              fill: $themeColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

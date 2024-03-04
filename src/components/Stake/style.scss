@@ -1,0 +1,118 @@
+.stake-section {
+  margin: 50px 0;
+  .stake-wrap {
+    .stake-details {
+      margin-right: 110px;
+      @include media("<=tablet") {
+        margin-right: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .stake-desc-main {
+        display: flex;
+        direction: row;
+        align-items: end;
+        gap: 10px;
+        color: #eff3a1;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        @include media("<=tablet") {
+          margin: 0 auto;
+          direction: rtl;
+          justify-content: center;
+          gap: 4px;
+        }
+      }
+      .main-heading {
+        font-family: Syne;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        @include media("<=tablet") {
+          font-size: 32px;
+        }
+      }
+      .stake-heaing {
+        margin: 10px 0;
+        color: #eff3a1;
+        font-family: Syne;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        @include media("<=tablet") {
+          font-size: 24px;
+        }
+      }
+      .stake-desc {
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        @include media("<=tablet") {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      .stake-btn {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+        width: 230px;
+        height: 60px;
+        display: flex;
+        border-radius: 10px;
+        color: #eff3a1;
+        border: 1px solid #eff3a1;
+        align-items: center;
+        @include media("<=tablet") {
+          width: 200px;
+          height: 40px;
+          margin: auto;
+          margin-top: 20px;
+          gap: 2px;
+        }
+
+        @include anim;
+        &:hover {
+          border: 1px solid $themeColor;
+        }
+        cursor: pointer;
+        .btn {
+          display: flex;
+          font-family: Syne;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          @include media("<=tablet") {
+            font-size: 14px;
+          }
+        }
+        .btn-arrow {
+        }
+      }
+    }
+  }
+  .stake-img {
+    position: relative;
+    @include media("<=tablet") {
+      margin-top: 30px;
+    }
+    .stake-col {
+      position: absolute;
+      top: 0;
+      margin: 10px auto;
+      width: 630px;
+      height: 475px;
+      border-radius: 630px;
+      background: rgba(14, 255, 214, 0.2);
+      filter: blur(252.5px);
+      @include media("<=tablet") {
+        width: 330px;
+        height: 275px;
+      }
+    }
+  }
+}

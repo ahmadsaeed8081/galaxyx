@@ -1,0 +1,13 @@
+export { default as WalletIcon } from "./WalletIcon";
+export { default as RocketIcon } from "./RocketIcon";
+export { default as EditIcon } from "./EditIcon";
+export { default as LinkedinIcon } from "./LinkedinIcon";
+export { default as YoutubeIcon } from "./YoutubeIcon";
+export { default as TwitterIcon } from "./TwitterIcon";
+export { default as InstagramIcon } from "./InstagramIcon";
+export { default as FacebookIcon } from "./FacebookIcon";
+export { default as CheckIcon } from "./CheckIcon";
+export { default as ArrowRightIcon } from "./ArrowRightIcon";
+export { default as MenuIcon } from "./MenuIcon";
+export { default as RocketIcon2 } from "./RocketIcon2";
+export { default as CopyIcon } from "./CopyIcon";
