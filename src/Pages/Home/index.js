@@ -79,8 +79,8 @@ const Main = () => {
     // bid_time: selectedAmount,
   });
 
-  const CHAIN_ID = "56";
-  const CHAIN_ID1 = "0x38";
+  const CHAIN_ID = "80001";
+  // const CHAIN_ID = "0x38";
 
 
   useEffect(() => {
@@ -260,7 +260,7 @@ const { data:stakeResult_withdrawReward, isLoading2_withdrawReward, isSuccess2_w
 
 const { chains, error, isLoading, pendingChainId, switchNetwork:reward_switch } =
 useSwitchNetwork({
-  chainId: CHAIN_ID1,
+  chainId: CHAIN_ID,
   // throwForSwitchChainNotSupported: true,
   onSuccess(){
 
@@ -269,7 +269,7 @@ useSwitchNetwork({
 
 })
 // const { switchNetwork: stake_switch } = useSwitchNetwork({
-//   chainId: CHAIN_ID1,
+//   chainId: CHAIN_ID,
 //   // throwForSwitchChainNotSupported: true,
 //   onSuccess() {
 //     approval?.();
@@ -278,7 +278,7 @@ useSwitchNetwork({
 
 const {switchNetwork:stake_switch } =
 useSwitchNetwork({
-  chainId: CHAIN_ID1,
+  chainId: CHAIN_ID,
   // throwForSwitchChainNotSupported: true,
   onSuccess(){
 
@@ -289,7 +289,7 @@ useSwitchNetwork({
 
 const {switchNetwork:buy_switch } =
 useSwitchNetwork({
-  chainId: CHAIN_ID1,
+  chainId: CHAIN_ID,
   // throwForSwitchChainNotSupported: true,
   onSuccess(){
 
@@ -301,7 +301,7 @@ useSwitchNetwork({
 
 const {switchNetwork:sell_switch } =
 useSwitchNetwork({
-  chainId: CHAIN_ID1,
+  chainId: CHAIN_ID,
   // throwForSwitchChainNotSupported: true,
   onSuccess(){
 
@@ -359,7 +359,7 @@ const waitForTransaction2 = useWaitForTransaction({
 
 
   function Convert_To_Wei(val) {
-    const web3= new Web3(new Web3.providers.HttpProvider("https://bsc.publicnode.com"));
+    const web3= new Web3(new Web3.providers.HttpProvider("https://polygon-mumbai-bor-rpc.publicnode.com	"));
   
     val = web3.utils.toWei(val.toString(), "ether");
     return val;
@@ -371,7 +371,7 @@ const waitForTransaction2 = useWaitForTransaction({
     try {
       console.log("my balanace mount "+address);
       setLoader(true)
-      const web3= new Web3(new Web3.providers.HttpProvider("https://bsc.publicnode.com"));
+      const web3= new Web3(new Web3.providers.HttpProvider("https://polygon-mumbai-bor-rpc.publicnode.com	"));
 
       // const balance = await web3.eth.getBalance(address);
 

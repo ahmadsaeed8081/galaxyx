@@ -4,7 +4,7 @@ import Home from "../Pages/Home";
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react'
 import { configureChains, createConfig, WagmiConfig } from 'wagmi'
-import { bsc} from 'wagmi/chains'
+import { polygonMumbai} from 'wagmi/chains'
 
 
 
@@ -18,7 +18,7 @@ const Routing = () => {
   const [isWalletConnected, set_isWalletConnected] = useState(false);
 
 
-  const chains = [bsc]
+  const chains = [polygonMumbai]
 const projectId = '8b3cd7dcbfb565705532d880d73759f2'
 
 const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])

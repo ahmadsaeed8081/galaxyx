@@ -1,6 +1,6 @@
-export const cont_address="0xfD894bC06B3a5797cdaF3400FFA00b9aEEcf8AcD";
-export const Token_address="0xcC143Bf065D91FBBCe858D76E823B65c2045d7d3";
-export const usdt_address="0x55d398326f99059fF775485246999027B3197955";
+export const cont_address="0xaD528C44b010e06377dE83B3b7400fadE62292E7";
+export const Token_address="0x33b0E5AB94132AF35F1B174bd28d12bB04FB8Ed8";
+export const usdt_address="0xd562bEA1e3ca6236e3c2626b5E1499f44E9002b7";
 
 export const cont_abi=[
 	{

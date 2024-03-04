@@ -59,7 +59,7 @@ const Hero = ({
             </div>
           </div>
           <div className="hero-right-side relative flex flex-1 justify-center items-center">
-            <div className="circle absolute"></div>
+            {/* <div className="circle absolute"></div> */}
             {/* <img alt="map" src="./images/map.png" className="map-img" /> */}
           </div>
         </div>
